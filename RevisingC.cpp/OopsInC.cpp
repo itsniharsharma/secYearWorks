@@ -1,5 +1,5 @@
-// #include<iostream>
-// using namespace std;
+#include<iostream>
+using namespace std;
 
 // class myClass{
 //     public: //access specifiers, bydefault every class is private
@@ -114,6 +114,142 @@
 //   cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n";
 //   return 0;
 // }
+
+//-------------------------------------------------------------------------------------------------------
+//Encapsulation 
+//It means to hide some data and show the permitted stuff only
+
+// #include<iostream>
+// using namespace std;
+
+// class Employee{
+
+//     private: 
+//     int salary;
+
+//     public:
+//     //setter
+//     void setSalary(int s){
+//         salary = s;
+//     }
+
+//     int getSalary(){
+//         //getter
+//         return salary;
+//     }
+// };
+
+// int main(){
+//     Employee Abhishek;
+//     Abhishek.setSalary(20000);
+//     cout << Abhishek.getSalary() << endl;
+//     return 0;
+// }
+
+/*
+It is considered good practice to declare your class attributes as private (as often as you can). 
+Encapsulation ensures better control of your data, because you (or others) can change one part of 
+the code without affecting other parts.
+It also Increases security of data
+*/
+
+//------------------------------------------------------------------------------------------------------------
+
+
+//Inharitance
+//It means to inharite some of the properties
+//It's divided in 2 groups, derived class and parent class
+
+class stationary{  //Stationary is parent class
+    public:
+    string brand="Natraj";
+    int price=60;
+
+    void write(){
+        cout << "It write's clearly!" << endl;
+    }
+};
+
+//Constructing a child class: pencil
+
+class pencil : public stationary{  //created pencil class, having properties of stationary, with extra feature of discount
+    public:
+    string discount="10%";
+};
+
+class pen : public stationary{    //created pen class, having properties of stationary, with extra feature of discount
+    public:
+    string discount="5%";
+    string extraFeature="It's longlasting with extra ink";
+};
+
+int main(){
+    pencil theOneInMyKit;
+    theOneInMyKit.write(); //write() is a method
+    cout << theOneInMyKit.brand << endl;
+    cout << theOneInMyKit.price << endl;
+    cout << theOneInMyKit.discount << endl << endl;
+
+
+    pen theOneInMyBag;
+    theOneInMyBag.write();
+    cout << theOneInMyBag.brand << endl;
+    cout << theOneInMyBag.price << endl;
+    cout << theOneInMyBag.discount << endl;
+    cout << theOneInMyBag.extraFeature << endl << endl;
+    return 0;
+}
+
+/*
+  - What basically i did is: 
+  - Targetted stationary of brand natraj, having same price and similar good properties, when they used
+  - Now, taken two aspects of stationary - Pen and Pencil
+  - Both have similar features, but distinct by discounts.
+  - So inhirited all similar features and added new features which make them distinct
+  - class childClassName : public ParentClass{
+        Here u go
+      }
+  - Remembar, parent class must be public to give access to its properties.
+*/
+
+//--------------------------------------------------------------------------------------------------
+
+//Multiple Inheritance is 
+//Having 2 parent class and child class has properties of both parent classes as:
+
+// Base class
+// class MyClass {
+//   public:
+//     void myFunction() {
+//       cout << "Some content in parent class." ;
+//     }
+// };
+
+// // Another base class
+// class MyOtherClass {
+//   public:
+//     void myOtherFunction() {
+//       cout << "Some content in another class." ;
+//     }
+// };
+
+// // Child class
+// class MyChildClass: public MyClass, public MyOtherClass {
+// };
+
+// int main() {
+//   MyChildClass myObj;
+//   myObj.myFunction();
+//   myObj.myOtherFunction();
+//   return 0;
+// }
+
+//----------------------------------------------------------------------------------------------
+
+
+
+
+
 
 
 
