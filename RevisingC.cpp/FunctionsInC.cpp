@@ -12,6 +12,13 @@ using namespace std;
       }
    }
 
+   //There is a concept of function overloading, 
+   //using it, we can use functions with similar names but different parameters, as
+   int function01(int x);
+   float function01(float x);
+   double functio01(double x, double y);  //such practice provides flexibility andenhance readability
+  //Instead of defining two functions that should do the same thing, it is better to overload one.
+
 int main(){
     myFunction();  //India
     myFunction("USA"); //USA
