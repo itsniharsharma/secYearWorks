@@ -160,45 +160,45 @@ It also Increases security of data
 //It means to inharite some of the properties
 //It's divided in 2 groups, derived class and parent class
 
-class stationary{  //Stationary is parent class
-    public:
-    string brand="Natraj";
-    int price=60;
+// class stationary{  //Stationary is parent class
+//     public:
+//     string brand="Natraj";
+//     int price=60;
 
-    void write(){
-        cout << "It write's clearly!" << endl;
-    }
-};
+//     void write(){
+//         cout << "It write's clearly!" << endl;
+//     }
+// };
 
-//Constructing a child class: pencil
+// //Constructing a child class: pencil
 
-class pencil : public stationary{  //created pencil class, having properties of stationary, with extra feature of discount
-    public:
-    string discount="10%";
-};
+// class pencil : public stationary{  //created pencil class, having properties of stationary, with extra feature of discount
+//     public:
+//     string discount="10%";
+// };
 
-class pen : public stationary{    //created pen class, having properties of stationary, with extra feature of discount
-    public:
-    string discount="5%";
-    string extraFeature="It's longlasting with extra ink";
-};
+// class pen : public stationary{    //created pen class, having properties of stationary, with extra feature of discount
+//     public:
+//     string discount="5%";
+//     string extraFeature="It's longlasting with extra ink";
+// };
 
-int main(){
-    pencil theOneInMyKit;
-    theOneInMyKit.write(); //write() is a method
-    cout << theOneInMyKit.brand << endl;
-    cout << theOneInMyKit.price << endl;
-    cout << theOneInMyKit.discount << endl << endl;
+// int main(){
+//     pencil theOneInMyKit;
+//     theOneInMyKit.write(); //write() is a method
+//     cout << theOneInMyKit.brand << endl;
+//     cout << theOneInMyKit.price << endl;
+//     cout << theOneInMyKit.discount << endl << endl;
 
 
-    pen theOneInMyBag;
-    theOneInMyBag.write();
-    cout << theOneInMyBag.brand << endl;
-    cout << theOneInMyBag.price << endl;
-    cout << theOneInMyBag.discount << endl;
-    cout << theOneInMyBag.extraFeature << endl << endl;
-    return 0;
-}
+//     pen theOneInMyBag;
+//     theOneInMyBag.write();
+//     cout << theOneInMyBag.brand << endl;
+//     cout << theOneInMyBag.price << endl;
+//     cout << theOneInMyBag.discount << endl;
+//     cout << theOneInMyBag.extraFeature << endl << endl;
+//     return 0;
+// }
 
 /*
   - What basically i did is: 
@@ -245,6 +245,56 @@ int main(){
 // }
 
 //----------------------------------------------------------------------------------------------
+
+//Understanding PolyMorphism
+
+// class Animals{
+//     public:
+//     string name;
+//     int age;
+
+//     void makeSound(){
+//         cout << "Makes wild sound!" << endl;
+//     }
+// };
+
+// class cat : public Animals{
+//     public:
+//     void makeSound(){
+//         cout << "Meow" << endl;
+//     }
+// };
+
+// class dog : public Animals{
+//     public:
+//     void makeSound(){
+//         cout << "woof" << endl;
+//     }
+// };
+
+
+// void playSound(Animals* pet) {  //entered pointer named animal
+//     pet->makeSound();
+// }
+
+
+// int main(){
+//     Animals* animal01 = new dog();
+//     Animals* animal02 = new cat();
+
+//     playSound(animal01);
+//     playSound(animal02);
+//     return 0;
+// }
+
+//HELP NEEDED!! 
+
+//----------------------------------------------------------------------------------------
+
+
+
+
+
 
 
 
