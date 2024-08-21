@@ -38,6 +38,7 @@ int main(){
 
 //-------------------------------- QUES 7
 
+
 int main() {
     int a = 5, b = 10;
 
@@ -54,3 +55,16 @@ int main() {
 
     return 0;
 }
+
+
+/*
+How does XOR gate works? : 
+Input A	Input B	Output (A XOR B)
+0	0	0
+0	1	1
+1	0	1
+1	1	0
+*/
+
+//Hence XOR which is exclusive OR can we used to switch values
+
