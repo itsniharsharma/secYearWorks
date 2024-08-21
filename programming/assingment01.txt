@@ -1,0 +1,19 @@
+LAB ASSIGNMENT 1
+1. Write a program (WAP) to display "Hello World" on console display.
+2. WAP to input an integer, decimal and character and display it.
+3. WAP to add, subtract, multiply, divide numbers.
+4. Write a C++ program that will ask for a temperature in Celsius and display it in degree 
+Fahrenheit.[F=9C/5+32]
+5. WAP to format console output using '\n', '\t', '\b' , endl, setw within cout statement
+6. WAP to utilize assignment += and - = type operators.
+7. WAP to swap two numbers using bitwise operator.
+8. Write a program to solve the following problem 
+A library charges a fine for every book return late. For first 5 days the fine is 50 paise, for 
+6-10 days fine is one rupee and above 10 days fine is 5 rupees. If you return the book 
+after 30 days your membership will be cancelled .WAP to accept no. of days the member 
+is late to return the book and display the fine or appropriate message. 
+9. WAP to display arithmetic operations using switch-case statement. 
+10. WAP to check whether the given number is even or odd (By using if-else and conditional 
+operator).
+
+
