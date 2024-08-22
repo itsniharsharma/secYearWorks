@@ -394,3 +394,59 @@ int main(){
 
 //---------------------------------------------------------
 
+namespace firstNamespace{
+
+    int value = 10;
+
+    void displayValue(){
+        cout << " value for 1st namespace is: "<< value <<endl;
+    }
+}
+
+namespace secondNamespace{
+     
+     int value = 20;
+    
+     void displayValue(){
+        cout << "value for 2nd namespace is: "<< value << endl;
+     }
+}
+
+int main(){
+
+    firstNamespace :: displayValue();
+    secondNamespace :: displayValue();
+
+    cout << "Value directly from firstNamespace: " << firstNamespace::value << endl;
+    cout << "Value directly from secondNamespace: " << secondNamespace::value << endl;
+
+    return 0;
+}
+
+/*
+- what do u understand? 
+- what is basi cdifference between a class and namespace? 
+
+- A namespace is primarily used to organize and group related identifiers 
+ (such as variables, functions, classes, etc.) to avoid name conflicts, especially
+ in large projects or when using multiple libraries.
+
+- Just like value is a variable common in both namespaces, but it avoided conflict! 
+
+-  Namespaces do not have private, protected, or public access specifiers like classes do. 
+   Everything in a namespace is accessible directly (using the namespace's scope).
+
+
+Aspect	                               Namespace	                                              Class
+Purpose	                  Organize code and avoid name conflicts	                    Define blueprints for creating objects
+Instantiation	          Cannot be instantiated	                                    Can be instantiated (objects created)
+Access Control	          No access control (everything is accessible)	                Access control through private, protected, public
+Encapsulation	          No encapsulation	                                            Encapsulates data and behavior
+Member Functions	      Can contain functions, but they aren’t member functions	        Has member functions
+Use Case	              Avoiding naming conflicts, grouping related code logically	        Implementing OOP concepts, creating objects
+
+
+-  Use namespaces to group related functions, variables, 
+   and classes into a logical module, particularly to avoid name clashes 
+   in large projects or when integrating third-party libraries.
+*/
