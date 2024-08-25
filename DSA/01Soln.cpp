@@ -235,7 +235,7 @@ int main(){
 
 */
 
-
+/*
 void removeDuplicate(int arr[], int &size){
 
     int temp[size];
@@ -279,3 +279,38 @@ int main(){
 
     return 0;
 }
+*/
+
+//-----------------------------------------------------------------------
+
+//QUES 04 --> Reverse elements of array 
+
+
+void reverseArray(int arr[], int size){
+    for(int i=0; i<size/2; i++){
+        int temp = arr[i];
+        arr[i] = arr[size -1 -i];
+        arr[size -1 - i]= temp; 
+    }
+}
+
+void display(int arr[], int size){
+    for(int i=0; i<size; i++){
+        cout << arr[i] << " ";
+    }
+
+    cout << endl;
+}
+
+int main(){
+ int arr[]={1,2,3,4,5,6,7};
+ int size = sizeof(arr)/sizeof(arr[0]);
+
+  reverseArray(arr, size);
+  display(arr, size);
+
+}
+
+//----------------------------------------------------
+//MATRIX MULTIPLICATION: 
+
