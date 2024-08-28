@@ -1,40 +1,40 @@
-// #include<iostream>
-// using namespace std;
+#include<iostream>
+using namespace std;
 
-// class test{
-//     int a, b;
+class test{
+    int a, b;
 
-// public:
-//     void getData(int x, int y){
-//         a = x; 
-//         b = y;
-//     } 
+public:
+    void getData(int x, int y){
+        a = x; 
+        b = y;
+    } 
 
-//     void display(){
-//         cout << a << " " << b << endl;
-//     }
+    void display(){
+        cout << a << " " << b << endl;
+    }
 
-//     friend void sum(test h);
-// };
+    friend void sum(test h);
+};
 
-// void sum(test h){
-//     cout << "sum is: " << h.a + h.b << endl;
-// };
+void sum(test h){
+    cout << "sum is: " << h.a + h.b << endl;
+};
 
-// int main(){
+int main(){
 
-//     test t1, t2;
-//     t1.getData(10, 20);
-//     t2.getData(30, 40);
+    test t1, t2;
+    t1.getData(10, 20);
+    t2.getData(30, 40);
 
-//     t1.display();
-//     t2.display();
+    t1.display();
+    t2.display();
 
-//     sum(t1);  //30
-//     sum(t2);  //70 
+    sum(t1);  //30
+    sum(t2);  //70 
 
-//     return 0;
-// }
+    return 0;
+}
 
 //---------------------------------------------------------------
 
@@ -214,9 +214,61 @@ int main(){
 
 //-----------------------------------------------------------------------
 
+/*
 #include<iostream>
 using namespace std;
 
+class rectangle {
+   float length, breadth;
+public: 
+   void getData(float l, float b){
+      this->length= l;
+      this->breadth= b;
+   }
+
+   float displayArea(){
+      return this->length * this->breadth;
+   }
+};
+
 int main(){
-    
+ int arrSize = 3;
+    rectangle myRec[arrSize]; 
+
+    for(int i = 0; i < arrSize; i++) {
+        float length, breadth;
+        cout << "Enter length and breadth for rectangle " << i + 1 << ": ";
+        cin >> length >> breadth;
+        myRec[i].getData(length, breadth);
+    }  
+
+    cout << "\nAreas of Rectangles:" << endl;
+    for(int i = 0; i < arrSize; i++) {
+        cout << "Area of rectangle " << i + 1 << ": " << myRec[i].displayArea() << endl;
+    }
+
+    return 0;
 }
+*/
+
+//--------------------------------------------------------------------------
+
+/*
+float cube(float num){
+    return num*num*num;
+}
+
+int main(){
+   float n;
+   cout << "enter a number: " << endl;
+   cin >> n >> endl;
+
+   float ans= cube(n);
+   cout << ans << endl;
+
+   return 0;
+}
+*/
+
+//-------------------------------------------------------------------------
+
