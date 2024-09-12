@@ -40,6 +40,7 @@ void remDup(int arr[], int n){
 
     arr[j] = arr[n-1];
 
+
     for(int i=0; i<j; i++){
         cout << arr[i] << endl;
     }
